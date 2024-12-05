@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Thêm nút điều hướng ở đầu màn hình -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restart"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnManageQuestions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quản lý câu hỏi"/>
+    </LinearLayout>
+
+    <!-- TextView hiển thị vị trí -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="@color/purple_500"
+        android:textColor="@android:color/white"/>
+
+    <!-- GridLayout cho mê cung -->
+    <GridLayout
+        android:id="@+id/mazeGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+
+    <!-- Layout cho các nút điều hướng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="▲"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leftButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="◄"/>
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/rightButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="►"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="▼"/>
+    </LinearLayout>
+</LinearLayout>

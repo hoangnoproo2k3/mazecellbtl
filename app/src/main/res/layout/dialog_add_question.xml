@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập câu hỏi"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 1"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 2"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án 3"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đáp án đúng (0-2)"
+        android:inputType="number"/>
+
+</LinearLayout> 
